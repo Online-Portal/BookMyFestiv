@@ -1,8 +1,14 @@
 import React from 'react';
+import {input} from 'antd';
 import ReactDOM from 'react-dom';
-const App = () => (
-  <div>
-     <h1>Hello world!!</h1>
- </div>
-)
+class App extends React.Component{
+  render(){
+    return(
+    <div>
+      <input id='user_name'/>
+      <input id='password' type='password'/>
+    </div>
+    );
+  }
+}
 ReactDOM.render(<App/>, document.getElementById('root'));
